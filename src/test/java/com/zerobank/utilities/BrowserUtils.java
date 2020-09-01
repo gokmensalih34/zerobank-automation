@@ -1,10 +1,14 @@
 package com.zerobank.utilities;
 
+import com.zerobank.pages.AccountActivityPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +44,10 @@ public class BrowserUtils {
             elemTexts.add(el.getText());
         }
         return elemTexts;
+    }
+    public static Select getDropdownElement () {
+        Select typeOptions = new Select(Driver.get().findElement(By.cssSelector("select#aa_type")));
+        return typeOptions;
     }
 
 }

@@ -1,4 +1,3 @@
-com/zerobank/runners/FailedTestRunner.class
 com/zerobank/stepdefinitions/LoginStepDefs.class
 com/zerobank/pages/BasePage.class
 com/zerobank/utilities/Driver.class

@@ -2,6 +2,7 @@ package com.zerobank.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -37,8 +38,6 @@ public class AccountActivityPage extends BasePage{
     @FindBy(css = "button[type=submit]")
     public  WebElement find;
 
-
-
     @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[2]")
     public List<WebElement> online;
 
@@ -49,6 +48,17 @@ public class AccountActivityPage extends BasePage{
     @FindBy(css = "input[name=description]")
     public WebElement description;
 
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[3]")
+    public List<WebElement> deposit;
+
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[4]")
+    public List<WebElement> withdrawal;
+
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[4]")
+    public List<WebElement> withdrawalForTypeDeposit;
+
+    @FindBy (css="select#aa_type")
+    public Select typeOptions;
 
 
 }

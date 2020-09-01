@@ -43,7 +43,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Search description",
+  "name": "Search date range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -53,11 +53,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user enters description \"ONLINE\"",
+  "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_description(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -73,55 +73,24 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "results table should only show descriptions containing \"ONLINE\"",
+  "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters description “OFFICE”",
+  "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_description_OFFICE()"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_description_OFFICE(FindTransactionsStepDefs.java:101)\n\tat ✽.the user enters description “OFFICE”(file:///Users/sgok/IdeaProjects/zerobank-automation/src/test/resources/features/FindTransactions.feature:23)\n",
-  "status": "pending"
-});
-formatter.step({
-  "name": "clicks search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.clicks_search()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "results table should only show descriptions containing \"OFFICE\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "results table should not show descriptions containing \"OFFICE\"",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.results_table_should_not_show_descriptions_containing(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

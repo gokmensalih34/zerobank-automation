@@ -20,12 +20,12 @@ Feature: Navigating to specific accounts in Accounts Activity
     Then the "Account Activity" page should be displayed
     And Account drop down should have "Checking" selected
 
-  Scenario: Checking account redirect
+  Scenario: Credit Card account redirect
     When the user clicks on Credit card link on the Account Summary page
     Then the "Account Activity" page should be displayed
     And Account drop down should have "Credit Card" selected
 
-  Scenario: Checking account redirect
+  Scenario: Loan account redirect
     When the user clicks on Loan link on the Account Summary page
     Then the "Account Activity" page should be displayed
     And Account drop down should have "Loan" selected

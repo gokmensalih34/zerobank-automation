@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Find Transactions in Account Activity" time="15.446" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zerobank.runners.FailedTestRunner" time="0.008" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="12"/>
@@ -58,5 +58,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="Type" classname="Find Transactions in Account Activity" time="15.446"/>
+  <testcase name="initializationError" classname="com.zerobank.runners.FailedTestRunner" time="0.008">
+    <error message="Failed to parse &apos;target/rerun.txt&apos;" type="io.cucumber.core.exception.CucumberException">io.cucumber.core.exception.CucumberException: Failed to parse 'target/rerun.txt'
+Caused by: java.nio.file.NoSuchFileException: target/rerun.txt
+</error>
+  </testcase>
 </testsuite>
