@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,48 +11,24 @@
         "steps": [
           {
             "result": {
-              "duration": 3867099000,
+              "duration": 3976650000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.AccountActivityNavigationStepDefs.the_user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 806480000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.AccountActivityNavigationStepDefs.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1071274000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-01T14:51:48.147Z",
+        "start_timestamp": "2020-09-02T10:54:55.352Z",
         "before": [
           {
             "result": {
-              "duration": 1413519000,
+              "duration": 1486825000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +36,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Search date range",
+        "line": 6,
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transactions-in-account-activity;search-date-range",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
         "after": [
           {
             "result": {
-              "duration": 87613000,
+              "duration": 91383000,
               "status": "passed"
             },
             "match": {
@@ -80,81 +56,65 @@
         "steps": [
           {
             "result": {
-              "duration": 4255803000,
+              "duration": 4151461000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+            "line": 7,
+            "name": "Add New Payee tab",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AddNewPayee.add_New_Payee_tab()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4075032000,
+              "duration": 1682493000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "clicks search",
+            "line": 8,
+            "name": "creates new payee using following information",
             "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.clicks_search()"
+              "location": "com.zerobank.stepdefinitions.AddNewPayee.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2361000,
+              "duration": 1029480000,
               "status": "passed"
             },
             "line": 13,
-            "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+            "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 58
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 74
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AddNewPayee.message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4288971000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-02\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
           }
         ],
         "tags": [
@@ -164,11 +124,11 @@
         ]
       }
     ],
-    "name": "Find Transactions in Account Activity",
+    "name": "Add new payee under pay bills",
     "description": "",
-    "id": "find-transactions-in-account-activity",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "uri": "file:src/test/resources/features/AddNewPayee.feature",
     "tags": []
   }
 ]

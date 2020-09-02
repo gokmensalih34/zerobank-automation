@@ -6,7 +6,6 @@ Feature: Find Transactions in Account Activity
     When the user clicks on Savings link on the Account Summary page
     Given the user accesses the Find Transactions tab
 
-  @wip
   Scenario: Search date range
     When the user enters date range from "2012-09-01" to "2012-09-06"
     And clicks search

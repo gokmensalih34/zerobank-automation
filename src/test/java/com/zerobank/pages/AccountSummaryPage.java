@@ -20,6 +20,8 @@ public class AccountSummaryPage extends BasePage{
     @FindBy(xpath = "//a[.='Loan']")
     public WebElement loan;
 
+    @FindBy(linkText = "Pay Bills")
+    public WebElement payBillsLink;
 
 
 

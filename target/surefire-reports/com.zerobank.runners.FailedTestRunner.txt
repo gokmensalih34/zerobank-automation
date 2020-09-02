@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.zerobank.runners.FailedTestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in com.zerobank.runners.FailedTestRunner
-initializationError(com.zerobank.runners.FailedTestRunner)  Time elapsed: 0.008 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.zerobank.runners.FailedTestRunner
+initializationError(com.zerobank.runners.FailedTestRunner)  Time elapsed: 0.002 s  <<< ERROR!
 io.cucumber.core.exception.CucumberException: Failed to parse 'target/rerun.txt'
 Caused by: java.nio.file.NoSuchFileException: target/rerun.txt
 

@@ -1,3 +1,4 @@
+
 package com.zerobank.pages;
 
 import com.zerobank.utilities.Driver;
@@ -8,9 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends  BasePage{
 
-    public LoginPage(){
-        PageFactory.initElements(Driver.get(), this);
-    }
 
     @FindBy(css="input#user_login")
     public WebElement userName;
