@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 import java.util.Map;
 
-public class AddNewPayee {
+public class AddNewPayeeStepDefs {
 
     @Given("Add New Payee tab")
     public void add_New_Payee_tab() {

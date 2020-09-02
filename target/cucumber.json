@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3976650000,
+              "duration": 4434783000,
               "status": "passed"
             },
             "line": 4,
@@ -20,15 +20,27 @@
               "location": "com.zerobank.stepdefinitions.AccountActivityNavigationStepDefs.the_user_is_logged_in()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3115771000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user accesses the Purchase foreign currency cash tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+            },
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-02T10:54:55.352Z",
+        "start_timestamp": "2020-09-02T23:42:23.832Z",
         "before": [
           {
             "result": {
-              "duration": 1486825000,
+              "duration": 1585494000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +48,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Add a new payee",
+        "line": 27,
+        "name": "Error message for not entering value",
         "description": "",
-        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
+        "id": "purchase-foreign-currency;error-message-for-not-entering-value",
         "after": [
           {
             "result": {
-              "duration": 91383000,
+              "duration": 99615000,
               "status": "passed"
             },
             "match": {
@@ -56,63 +68,25 @@
         "steps": [
           {
             "result": {
-              "duration": 4151461000,
+              "duration": 2218054000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Add New Payee tab",
+            "line": 28,
+            "name": "user tries to calculate cost without entering a value",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AddNewPayee.add_New_Payee_tab()"
+              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.user_tries_to_calculate_cost_without_entering_a_value()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1682493000,
+              "duration": 2014283000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "creates new payee using following information",
+            "line": 29,
+            "name": "error message should be displayed",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AddNewPayee.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Payee Name",
-                  "The Law Offices of Hyde, Price \u0026 Scharks"
-                ]
-              },
-              {
-                "cells": [
-                  "Payee Address",
-                  "100 Same st, Anytown, USA, 10001"
-                ]
-              },
-              {
-                "cells": [
-                  "Account",
-                  "Checking"
-                ]
-              },
-              {
-                "cells": [
-                  "Payee details",
-                  "XYZ account"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1029480000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.AddNewPayee.message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed()"
+              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.error_message_should_be_displayed()"
             },
             "keyword": "Then "
           }
@@ -124,11 +98,11 @@
         ]
       }
     ],
-    "name": "Add new payee under pay bills",
+    "name": "Purchase Foreign Currency",
     "description": "",
-    "id": "add-new-payee-under-pay-bills",
+    "id": "purchase-foreign-currency",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AddNewPayee.feature",
+    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
     "tags": []
   }
 ]

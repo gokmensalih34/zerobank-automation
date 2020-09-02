@@ -45,9 +45,33 @@ public class BrowserUtils {
         }
         return elemTexts;
     }
+
+
+
     public static Select getDropdownElement () {
         Select typeOptions = new Select(Driver.get().findElement(By.cssSelector("select#aa_type")));
         return typeOptions;
     }
+
+
+    /**
+     * Extracts text from list of elements matching the provided locator into new List<String>
+     *
+     * @param locator
+     * @return list of strings
+     */
+    public static List<String> getElementsText(By locator) {
+
+        List<WebElement> elems = Driver.get().findElements(locator);
+        List<String> elemTexts = new ArrayList<>();
+
+        for (WebElement el : elems) {
+            elemTexts.add(el.getText());
+        }
+        return elemTexts;
+    }
+
+
+
 
 }

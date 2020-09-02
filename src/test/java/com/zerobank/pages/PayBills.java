@@ -3,7 +3,11 @@ package com.zerobank.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class PayBills extends BasePage{
+
+// VARIABLES OF "Add New Payee" PAGE
 
     @FindBy(linkText = "Add New Payee")
     public WebElement addNewPayee;
@@ -25,6 +29,27 @@ public class PayBills extends BasePage{
 
     @FindBy(css = "div#alert_content")
     public WebElement message;
+
+    // VARIABLES OF "Purchase Foreign Currency" PAGE
+
+    @FindBy (xpath = "//a[.='Purchase Foreign Currency']")
+    public WebElement purchaseForeignCurrencyLink;
+
+    @FindBy (css = "select#pc_currency")
+    public List<WebElement> currencies;
+
+    @FindBy(css = "select#pc_currency>option")
+    public List<WebElement> currencyOptions;
+
+    @FindBy (css = "input#pc_amount")
+    public WebElement amount;
+
+    @FindBy(id = "pc_inDollars_true")
+    public WebElement radioButtonUSDollar;
+
+    @FindBy(id = "pc_calculate_costs")
+    public WebElement calculateCostsButton;
+
 
 
 

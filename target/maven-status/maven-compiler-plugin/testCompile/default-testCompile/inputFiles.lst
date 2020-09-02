@@ -3,9 +3,10 @@
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/AccountActivityNavigationStepDefs.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/pages/BasePage.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/FindTransactionsStepDefs.java
+/Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/PurchaseForeignCurrenyStepDefs.java
+/Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/AddNewPayeeStepDefs.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/LoginStepDefs.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/runners/FailedTestRunner.java
-/Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/AddNewPayee.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/runners/CukesRunner.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/pages/AccountSummaryPage.java
 /Users/sgok/IdeaProjects/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/Hooks.java

@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>01 Sep 2020, 21:13</td>
+      <td>02 Sep 2020, 21:12</td>
     </tr>
   </tbody>
 </table>
@@ -117,22 +117,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3328626812.html">Add new payee under pay bills</a>
+      <a href="report-feature_4072811511.html">Purchase Foreign Currency</a>
     </div>
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149507997.html">@wip</a>
 </div>
 
 
-  <span class="lead-duration duration">13.396</span>
+  <span class="lead-duration duration">3.222</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Available currencies</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -144,163 +146,8 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details  in ">
 
 
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
-
-  <span class="lead-duration duration">3.356</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user enter credentials</span>
-
-  <span class="lead-duration duration">10.040</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#user_login&quot;}
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SGOKs-MacBook-Pro.local', ip: '2a02:908:f24:6680:9149:7a36:e617:588f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '12.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: /var/folders/4l/2nfr0s154g9...}, goog:chromeOptions: {debuggerAddress: localhost:56179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0a58376840c28cce307ec9181caf4501
-*** Element info: {Using=css selector, value=input#user_login}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
-	at com.zerobank.pages.LoginPage.login(LoginPage.java:27)
-	at com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter_credentials(LoginStepDefs.java:26)
-	at &#10045;.the user enter credentials(file:///Users/sgok/IdeaProjects/zerobank-automation/src/test/resources/features/AddNewPayee.feature:5)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3328626812.html">Add new payee under pay bills</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2149507997.html">@wip</a>
-</div>
-
-
-  <span class="lead-duration duration">0.000</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Add a new payee</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-4" class="collapse collapsable-details  in ">
-
-
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -312,13 +159,13 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
     </div>
 
-    <div id="before-5" class="inner-level collapse collapsable-details ">
+    <div id="before-2" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.stepdefinitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.636</span>
+  <span class="lead-duration duration">1.590</span>
 
           </div>
 
@@ -335,7 +182,7 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -347,15 +194,15 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Add New Payee tab</span>
+  <span class="name">the user accesses the Purchase foreign currency cash tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.175</span>
 
 </div>
 
@@ -378,11 +225,11 @@ Session ID: 0a58376840c28cce307ec9181caf4501
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">creates new payee using following information</span>
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">following currencies should be available</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -390,53 +237,79 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Currencies are available expected:&lt;[Australia (dollar), Canada (dollar), Switzerland (franc), China (yuan), Denmark (krone), Eurozone (euro), Great Britain (pound), Japan (yen), Mexico (peso), Norway (krone), New Zealand (dollar), Singapore (dollar)]&gt; but was:&lt;[                                Select One
+                                    Australia (dollar)
+                                    Canada (dollar)
+                                    Switzerland (franc)
+                                    China (yuan)
+                                    Denmark (krone)
+                                    Eurozone (euro)
+                                    Great Britain (pound)
+                                    Hong Kong (dollar)
+                                    Japan (yen)
+                                    Mexico (peso)
+                                    Norway (krone)
+                                    New Zealand (dollar)
+                                    Sweden (krona)
+                                    Singapore (dollar)
+                                    Thailand (baht)
+                            ]&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.following_currencies_should_be_available(PurchaseForeignCurrenyStepDefs.java:30)
+	at &#10045;.following currencies should be available(file:///Users/sgok/IdeaProjects/zerobank-automation/src/test/resources/features/PurchaseForeignCurrency.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
           <table class="step-arguments">
               <tr>
-                  <td>Payee Name</td>
-                  <td>The Law Offices of Hyde, Price &amp; Scharks</td>
+                  <td>Australia (dollar)</td>
               </tr>
               <tr>
-                  <td>Payee Address</td>
-                  <td>100 Same st, Anytown, USA, 10001</td>
+                  <td>Canada (dollar)</td>
               </tr>
               <tr>
-                  <td>Account</td>
-                  <td>Checking</td>
+                  <td>Switzerland (franc)</td>
               </tr>
               <tr>
-                  <td>Payee details</td>
-                  <td>XYZ account</td>
+                  <td>China (yuan)</td>
+              </tr>
+              <tr>
+                  <td>Denmark (krone)</td>
+              </tr>
+              <tr>
+                  <td>Eurozone (euro)</td>
+              </tr>
+              <tr>
+                  <td>Great Britain (pound)</td>
+              </tr>
+              <tr>
+                  <td>Japan (yen)</td>
+              </tr>
+              <tr>
+                  <td>Mexico (peso)</td>
+              </tr>
+              <tr>
+                  <td>Norway (krone)</td>
+              </tr>
+              <tr>
+                  <td>New Zealand (dollar)</td>
+              </tr>
+              <tr>
+                  <td>Singapore (dollar)</td>
               </tr>
           </table>
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">message The new payee The Law Offices of Hyde, Price &amp; Scharks was successfully created. should be displayed</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
 
 
 
@@ -454,7 +327,7 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -466,13 +339,13 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.509</span>
+  <span class="lead-duration duration">0.572</span>
 
           </div>
 
@@ -483,15 +356,15 @@ Session ID: 0a58376840c28cce307ec9181caf4501
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>screenshot</a>
-      <a href="embeddings/embedding_721270326.png" download target="_blank">
+      <a href="embeddings/embedding_1210367047.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-8" class="collapse collapsable-details ">
+    <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_721270326.png">
+        <img src="embeddings/embedding_1210367047.png">
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddNewPayee.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PurchaseForeignCurrency.feature");
 formatter.feature({
-  "name": "Add new payee under pay bills",
+  "name": "Purchase Foreign Currency",
   "description": "",
   "keyword": "Feature"
 });
@@ -22,8 +22,18 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "the user accesses the Purchase foreign currency cash tab",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Add a new payee",
+  "name": "Error message for not entering value",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -33,37 +43,21 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Add New Payee tab",
-  "keyword": "Given "
+  "name": "user tries to calculate cost without entering a value",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayee.add_New_Payee_tab()"
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.user_tries_to_calculate_cost_without_entering_a_value()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "creates new payee using following information",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayee.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
+  "name": "error message should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayee.message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed()"
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.error_message_should_be_displayed()"
 });
 formatter.result({
   "status": "passed"

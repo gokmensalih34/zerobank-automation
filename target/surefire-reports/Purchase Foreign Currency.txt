@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: Purchase Foreign Currency
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.76 s <<< FAILURE! - in Purchase Foreign Currency
+Available currencies(Purchase Foreign Currency)  Time elapsed: 9.76 s  <<< FAILURE!
+java.lang.AssertionError: 
+Currencies are available expected:<[Australia (dollar), Canada (dollar), Switzerland (franc), China (yuan), Denmark (krone), Eurozone (euro), Great Britain (pound), Japan (yen), Mexico (peso), Norway (krone), New Zealand (dollar), Singapore (dollar)]> but was:<[                                Select One
+                                    Australia (dollar)
+                                    Canada (dollar)
+                                    Switzerland (franc)
+                                    China (yuan)
+                                    Denmark (krone)
+                                    Eurozone (euro)
+                                    Great Britain (pound)
+                                    Hong Kong (dollar)
+                                    Japan (yen)
+                                    Mexico (peso)
+                                    Norway (krone)
+                                    New Zealand (dollar)
+                                    Sweden (krona)
+                                    Singapore (dollar)
+                                    Thailand (baht)
+                            ]>
+
