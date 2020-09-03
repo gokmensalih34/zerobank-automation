@@ -1,6 +1,7 @@
 package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.LoginPage;
+import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -17,8 +18,8 @@ public class LoginStepDefs {
 
     }
 
-    @When("the user enter credentials")
-    public void the_user_enter_credentials() {
+    @When("the user enters valid credentials")
+    public void the_users_enter_valid_credentials() {
         String username = ConfigurationReader.get("userName");
         String password = ConfigurationReader.get("password");
 
@@ -54,8 +55,14 @@ public class LoginStepDefs {
         String expected = "Login and/or password are wrong.";
 
         Assert.assertEquals(expected,actual.trim());
+        BrowserUtils.waitFor(1);
     }
 
+    @When("the user enter {string} {string}")
+    public void the_user_enter(String username, String password) {
 
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(username, password);
 
+    }
 }
