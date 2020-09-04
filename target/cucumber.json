@@ -3,32 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2238672000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-03T10:15:06.467Z",
+        "start_timestamp": "2020-09-04T00:15:20.758Z",
         "before": [
           {
             "result": {
-              "duration": 1673698000,
+              "duration": 1706821000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 24,
-        "name": "With wrong username or password login failed",
+        "line": 4,
+        "name": "Account Activity page title",
         "description": "",
-        "id": "user-should-login;with-wrong-username-or-password-login-failed;;2",
+        "id": "account-activity;account-activity-page-title",
         "after": [
           {
             "result": {
-              "duration": 92886000,
+              "duration": 87651000,
               "status": "passed"
             },
             "match": {
@@ -52,320 +31,133 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 798525000,
+              "duration": 5190265000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "the user enter \"\" \"password\"",
+            "line": 5,
+            "name": "the user is logged in",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1032762000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should see error message",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_see_error_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3943267000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+              "location": "com.zerobank.stepdefinitions.AccountActivityNavigationStepDefs.the_user_is_logged_in()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-03T10:15:12.376Z",
-        "before": [
-          {
-            "result": {
-              "duration": 898103000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "With wrong username or password login failed",
-        "description": "",
-        "id": "user-should-login;with-wrong-username-or-password-login-failed;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 93977000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 714685000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user enter \"username\" \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 26
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1040629000,
+              "duration": 1315407000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "the user should see error message",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_see_error_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2333621000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-03T10:15:19.093Z",
-        "before": [
-          {
-            "result": {
-              "duration": 893353000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "With wrong username or password login failed",
-        "description": "",
-        "id": "user-should-login;with-wrong-username-or-password-login-failed;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 89391000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 616053000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user enter \"1usermane\" \"password\"",
+            "line": 6,
+            "name": "the page title should be \"Zero - Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"1usermane\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 27
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 25
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.the_page_title_should_be(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1028076000,
+              "duration": 62723000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "the user should see error message",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_see_error_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1621139000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-03T10:15:24.065Z",
-        "before": [
-          {
-            "result": {
-              "duration": 842208000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "With wrong username or password login failed",
-        "description": "",
-        "id": "user-should-login;with-wrong-username-or-password-login-failed;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 80602000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 607251000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user enter \"username\" \"password2\"",
+            "line": 7,
+            "name": "the Account drop down default option should be \"Savings\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"username\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"password2\"",
-                  "offset": 26
+                  "val": "\"Savings\"",
+                  "offset": 47
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enter(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.the_Account_drop_down_default_option_should_be(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1024213000,
+              "duration": 70941000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "the user should see error message",
+            "line": 8,
+            "name": "Account drop down should have the following options",
             "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_should_see_error_message()"
+              "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.account_drop_down_should_have_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "keyword": "Then "
+            "rows": [
+              {
+                "cells": [
+                  "Savings"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Card"
+                ]
+              },
+              {
+                "cells": [
+                  "Brokerage"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170265000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Transactions table should have column following names",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.transactions_table_should_have_column_following_names(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Description"
+                ]
+              },
+              {
+                "cells": [
+                  "Deposit"
+                ]
+              },
+              {
+                "cells": [
+                  "Withdrawal"
+                ]
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -375,11 +167,11 @@
         ]
       }
     ],
-    "name": "User should login",
+    "name": "Account Activity",
     "description": "",
-    "id": "user-should-login",
+    "id": "account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/AccountActivity.feature",
     "tags": []
   }
 ]

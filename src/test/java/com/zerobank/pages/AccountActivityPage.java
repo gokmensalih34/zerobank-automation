@@ -8,6 +8,12 @@ import java.util.List;
 
 public class AccountActivityPage extends BasePage{
 
+    @FindBy(css = "select#aa_accountId>option")
+    public List<WebElement> accountOptions;
+
+    @FindBy(xpath = "//div[@id='all_transactions_for_account']//thead//th")
+    public List<WebElement> tableColumnNames;
+
     @FindBy(xpath = "//select[@id='aa_accountId']/option[1]")
     public WebElement optionSaving;
 

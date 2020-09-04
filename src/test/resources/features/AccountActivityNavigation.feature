@@ -1,8 +1,9 @@
 
 Feature: Navigating to specific accounts in Accounts Activity
 
-  Background:
-    Given the user is logged in
+ Background:
+   Given the user is logged in
+
 
   Scenario: Savings account redirect
     When the user clicks on Savings link on the Account Summary page

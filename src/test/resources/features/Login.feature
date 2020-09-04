@@ -15,7 +15,6 @@ Feature: User should login
     When the user enter wrong credentials
     Then the user should see error message
 
-  @wip
   Scenario Outline:  With wrong username or password login failed
     When the user enter "<username>" "<password>"
     Then the user should see error message
