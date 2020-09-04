@@ -68,9 +68,11 @@ public class AccountActivityStepDefs {
         List<String> actualColumnNames = BrowserUtils.getElementsText(new AccountActivityPage().tableColumnNames);
         Assert.assertEquals("Verify Transaction Column Names", expectedColumnNames,actualColumnNames);
         System.out.println("actualColumnNames = " + actualColumnNames);
+
 //        Asagidaki sekilde de test geciyor.
-//        Dropdown Eleman ile ilgili iyi bir calisma oldu. Ama POM icin uygun bir cözüm tarzi degil.
-//        Dropdown WebElement'i locate yap - Option Class'a ata - List<WebEleman>'a dönüstür - List<String>'e dönüstür - Assert yap
+//        List<WebEleman> ile ilgili iyi bir calisma oldu. Ama POM icin uygun bir cözüm tarzi degil.
+//        List<WebEleman>'i locate yap - List<WebEleman>'for döngüsü ve getText ile dönüstür - List<String>'e dönüstür - Assert yap
+//        -------------------------------
 //        List<WebElement> colHeaders = Driver.get().findElements(By.xpath("//div[@id='all_transactions_for_account']//thead//th"));
 //        List<String> cN = new ArrayList<>();
 //        for (WebElement colHeader : colHeaders) {
