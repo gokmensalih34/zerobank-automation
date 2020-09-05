@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PayBills extends BasePage{
 
-// VARIABLES OF "Add New Payee" PAGE
+// VARIABLES OF "Add New Payee" SUBMODULE
 
     @FindBy(linkText = "Add New Payee")
     public WebElement addNewPayee;
@@ -30,13 +30,16 @@ public class PayBills extends BasePage{
     @FindBy(css = "div#alert_content")
     public WebElement message;
 
-    // VARIABLES OF "Purchase Foreign Currency" PAGE
+    // VARIABLES OF "Purchase Foreign Currency" SUBMODULE
 
     @FindBy (xpath = "//a[.='Purchase Foreign Currency']")
     public WebElement purchaseForeignCurrencyLink;
 
-    @FindBy (css = "select#pc_currency")
-    public List<WebElement> currencies;
+    @FindBy(id = "pc_currency")
+    public WebElement pcCurrency;
+
+//    @FindBy (css = "select#pc_currency")
+//    public List<WebElement> currencies;
 
     @FindBy(css = "select#pc_currency>option")
     public List<WebElement> currencyOptions;
@@ -50,8 +53,29 @@ public class PayBills extends BasePage{
     @FindBy(id = "pc_calculate_costs")
     public WebElement calculateCostsButton;
 
+// VARIABLES OF "Pay Saved Payee" SUBMODULE
 
+//    @FindBy(css = "select#sp_payee")
+    @FindBy(id = "sp_payee")
+    public WebElement payeeDropdown;
 
+    @FindBy(id="sp_account")
+    public WebElement payeeAccountDropdown;
+
+    @FindBy(css = "input#sp_amount")
+    public WebElement savedPayeeAmount;
+
+    @FindBy(css = "input#sp_date")
+    public WebElement savedPayeeDate;
+
+    @FindBy(css = "input#sp_description")
+    public WebElement spDescription;
+
+    @FindBy(id = "pay_saved_payees")
+    public WebElement savedPayeePay;
+
+    @FindBy (css = "div#alert_content>span")
+    public WebElement messageForSuccesfullPayment;
 
 
 }

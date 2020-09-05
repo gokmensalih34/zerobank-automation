@@ -1,18 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivity.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PurchaseForeignCurrency.feature");
 formatter.feature({
-  "name": "Account Activity",
+  "name": "Purchase Foreign Currency",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Account Activity page title",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -28,55 +23,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the page title should be \"Zero - Account Activity\"",
+  "name": "the user accesses the Purchase foreign currency cash tab",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message for not selecting currency",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "user tries to calculate cost without selecting a currency",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.user_tries_to_calculate_cost_without_selecting_a_currency()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "error message \"Please, ensure that you have filled all the required fields with valid values.\" should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.the_page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account drop down default option should be \"Savings\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.the_Account_drop_down_default_option_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have the following options",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.account_drop_down_should_have_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Transactions table should have column following names",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.transactions_table_should_have_column_following_names(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.errorMessageShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

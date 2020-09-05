@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f8967c0-0faa-449f-956a-ed78440a2098" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/AccountActivityStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/PayBillsStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/AccountActivityStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/AccountActivityStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/LoginStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/PurchaseForeignCurrenyStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/PurchaseForeignCurrenyStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCurrency.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCurrency.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-html-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-html-reports/embedded0.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-html-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-html-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountActivityPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountActivityPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBills.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBills.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/AccountActivityStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/AccountActivityStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/LoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/LoginStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AccountActivity.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,26 +127,34 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="477" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.827@0.23.1440.827" timestamp="1597697128055" />
-    <state width="1349" height="253" key="GridCell.Tab.0.bottom" timestamp="1599178605022">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="735" height="242" key="GridCell.Tab.0.bottom" timestamp="1599349420322">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1349" height="253" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1599178605022" />
-    <state width="1398" height="101" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1598908848255" />
-    <state width="1349" height="253" key="GridCell.Tab.0.center" timestamp="1599178605021">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1311" height="285" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1599315071512" />
+    <state width="1376" height="202" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1599322001087" />
+    <state width="735" height="242" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1599349420322" />
+    <state width="1038" height="242" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1599348586125" />
+    <state width="735" height="242" key="GridCell.Tab.0.center" timestamp="1599349420321">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1349" height="253" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1599178605021" />
-    <state width="1398" height="101" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1598908848254" />
-    <state width="1349" height="253" key="GridCell.Tab.0.left" timestamp="1599178605020">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1311" height="285" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1599315071510" />
+    <state width="1376" height="202" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1599322001085" />
+    <state width="735" height="242" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1599349420321" />
+    <state width="1038" height="242" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1599348586124" />
+    <state width="735" height="242" key="GridCell.Tab.0.left" timestamp="1599349420321">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1349" height="253" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1599178605020" />
-    <state width="1398" height="101" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1598908848254" />
-    <state width="1349" height="253" key="GridCell.Tab.0.right" timestamp="1599178605022">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1311" height="285" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1599315071508" />
+    <state width="1376" height="202" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1599322001085" />
+    <state width="735" height="242" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1599349420321" />
+    <state width="1038" height="242" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1599348586124" />
+    <state width="735" height="242" key="GridCell.Tab.0.right" timestamp="1599349420322">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1349" height="253" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1599178605022" />
-    <state width="1398" height="101" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1598908848255" />
+    <state width="1311" height="285" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1599315071511" />
+    <state width="1376" height="202" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1599322001086" />
+    <state width="735" height="242" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1599349420322" />
+    <state width="1038" height="242" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1599348586125" />
     <state width="1294" height="265" key="GridCell.Tab.1.bottom" timestamp="1598972165062">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
@@ -164,13 +175,16 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="0" y="75" width="1047" height="722" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1597563356169" />
-    <state x="319" y="78" width="1014" height="692" key="find.popup" timestamp="1599178518305">
+    <state x="377" y="78" width="956" height="695" key="find.popup" timestamp="1599348878365">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="377" y="78" width="956" height="692" key="find.popup/0.23.1440.827@0.23.1440.827" timestamp="1599312909320" />
+    <state x="377" y="78" width="956" height="693" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1599318857045" />
+    <state x="377" y="78" width="956" height="694" key="find.popup/0.23.1440.829@0.23.1440.829" timestamp="1599348484813" />
+    <state x="377" y="78" width="956" height="695" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1599348878365" />
+    <state x="92" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1599219983511">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state x="319" y="78" width="1014" height="692" key="find.popup/0.23.1440.827@0.23.1440.827" timestamp="1599178518305" />
-    <state x="92" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1599086002073">
-      <screen x="0" y="23" width="1440" height="827" />
-    </state>
-    <state x="92" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1599086002073" />
+    <state x="92" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1599219983511" />
   </component>
 </project>

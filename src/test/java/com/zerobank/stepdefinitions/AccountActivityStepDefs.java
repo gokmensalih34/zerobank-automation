@@ -4,9 +4,9 @@ import com.zerobank.pages.AccountActivityPage;
 import com.zerobank.pages.AccountSummaryPage;
 import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -17,8 +17,6 @@ public class AccountActivityStepDefs {
 
     @Then("the page title should be {string}")
     public void the_page_title_should_be(String expectedPageTitle) {
-
-        new AccountSummaryPage().accountActivityPageLink.click();
 
         String actualPageTitle = Driver.get().getTitle();
         System.out.println("pageTitle = " + actualPageTitle);
@@ -80,6 +78,15 @@ public class AccountActivityStepDefs {
 //        }
 //        Assert.assertEquals(expectedColumnNames,cN);
 
+    }
+
+
+    @Then("the user should see failed message")
+    public void the_user_should_see_failed_message() {
+
+        BrowserUtils.waitFor(3);
+        Alert msg = Driver.get().switchTo().alert();
+        System.out.println("msg = " + msg.getText());
     }
 
 

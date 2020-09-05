@@ -29,43 +29,60 @@ public class PurchaseForeignCurrenyStepDefs {
     @Then("following currencies should be available")
     public void following_currencies_should_be_available(List<String> expectedCurrencies) {
 
-        List<String> actualCurrencies = BrowserUtils.getElementsText(new PayBills().currencies);
-        Assert.assertEquals("Currencies are available", expectedCurrencies,actualCurrencies);
+        Select select = new Select(new PayBills().pcCurrency);
+        List<WebElement> options = select.getOptions();
+        List<String> actualCurrencies = BrowserUtils.getElementsText(options);
+
+//        List<String> actualCurrencies = BrowserUtils.getElementsText(new PayBills().currencies);
+//        actualCurrencies.remove(0);
+        System.out.println("actualCurrencies = " + actualCurrencies);
+
+        System.out.println("expectedCurrencies = " + expectedCurrencies);
+//        Assert.assertEquals("Currencies are available", expectedCurrencies,actualCurrencies);
+//        Assert.assertTrue("Currencies are available", expectedCurrencies.contains(actualCurrencies));
+        for (String expectedCurrency : expectedCurrencies) {
+            Assert.assertTrue("Currencies are available", actualCurrencies.contains(expectedCurrency));
+        }
+
     }
 
 
     @When("user tries to calculate cost without selecting a currency")
     public void user_tries_to_calculate_cost_without_selecting_a_currency() {
 
-        new PayBills().amount.sendKeys("500");
-        new PayBills().radioButtonUSDollar.click();
-        new PayBills().calculateCostsButton.click();
+        PayBills payBills = new PayBills();
+
+        payBills.amount.sendKeys("500");
+        payBills.radioButtonUSDollar.click();
+        payBills.calculateCostsButton.click();
         BrowserUtils.waitFor(2);
     }
 
-    @Then("error message should be displayed")
-    public void error_message_should_be_displayed() {
+
+    @Then("error message {string} should be displayed")
+    public void errorMessageShouldBeDisplayed(String expectedAlertMessage) {
 
         Alert alert = Driver.get().switchTo().alert();
         String actualAlertText = alert.getText();
         System.out.println("actualAlertText = " + actualAlertText);
-        String expectedAlertMessage = "Please, ensure that you have filled all the required fields with valid values.";
         Assert.assertEquals("Error alert message", expectedAlertMessage,actualAlertText);
         BrowserUtils.waitFor(2);
+
     }
+
+
 
     @When("user tries to calculate cost without entering a value")
     public void user_tries_to_calculate_cost_without_entering_a_value() {
 
-        WebElement dropdownElement = Driver.get().findElement(By.cssSelector("select#pc_currency"));
-        Select currencyDropdown = new Select(dropdownElement);
+        Select select = new Select(new PayBills().pcCurrency);
 
-//        List<WebElement> actualCurrencies =currencyDropdown.getOptions();
-//        System.out.println("actualCurrencies.size() = " + actualCurrencies.size());
+//        List<WebElement> options = select.getOptions();
+//        List<String> elementsText = BrowserUtils.getElementsText(options);
 
 
 //            BrowserUtils.waitFor(1);
-            currencyDropdown.selectByIndex(1);
+            select.selectByIndex(1);
 //            BrowserUtils.waitFor(1);
 
             new PayBills().radioButtonUSDollar.click();
@@ -76,5 +93,6 @@ public class PurchaseForeignCurrenyStepDefs {
 
 
     }
+
 
 }

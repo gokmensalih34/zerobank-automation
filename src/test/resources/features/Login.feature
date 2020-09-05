@@ -12,7 +12,7 @@ Feature: User should login
 
 
   Scenario:  With wrong username or password login failed
-    When the user enter wrong credentials
+    When the user enters wrong credentials
     Then the user should see error message
 
   Scenario Outline:  With wrong username or password login failed

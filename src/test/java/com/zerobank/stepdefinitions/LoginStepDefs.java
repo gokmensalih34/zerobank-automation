@@ -35,8 +35,8 @@ public class LoginStepDefs {
     }
 
 
-    @When("the user enter wrong credentials")
-    public void the_user_enter_wrong_credentials() {
+    @When("the user enters wrong credentials")
+    public void the_user_enters_wrong_credentials() {
 
         String wrongUserName = ConfigurationReader.get("wrongUserName");
         String password = ConfigurationReader.get("password");
