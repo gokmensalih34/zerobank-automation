@@ -62,7 +62,7 @@ public class PayBills extends BasePage{
     @FindBy(id="sp_account")
     public WebElement payeeAccountDropdown;
 
-    @FindBy(css = "input#sp_amount")
+    @FindBy(id="sp_amount")
     public WebElement savedPayeeAmount;
 
     @FindBy(css = "input#sp_date")

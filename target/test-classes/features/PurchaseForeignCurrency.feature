@@ -20,7 +20,6 @@ Feature: Purchase Foreign Currency
       | New Zealand (dollar)  |
       | Singapore (dollar)    |
 
-  @wip
   Scenario: Error message for not selecting currency
     When user tries to calculate cost without selecting a currency
     Then error message "Please, ensure that you have filled all the required fields with valid values." should be displayed

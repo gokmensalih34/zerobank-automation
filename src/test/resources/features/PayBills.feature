@@ -16,6 +16,7 @@ Feature: Pay Bills
     And the user clicks on Pay button
     Then the user should see "The payment was successfully submitted."
 
+  @wip
     Scenario: User should see failed message in case of unsuccessful payment under Pay Bills
       And the user choose payee "Wells Fargo"
       And the user choose  Account "Loan"
@@ -23,4 +24,4 @@ Feature: Pay Bills
       And the user enter date "2020-09-08"
       And the user enter description "New Transaction"
       And the user clicks on Pay button
-      Then the user should see failed message
+      Then the user should see failed message as "Please fill in this field."

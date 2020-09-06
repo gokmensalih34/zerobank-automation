@@ -82,6 +82,28 @@ public class PayBillsStepDefs {
         Assert.assertEquals("Success message",expectedMessage,actualMessage);
         BrowserUtils.waitFor(5);
     }
+
+    @Then("the user should see failed message as {string}")
+    public void theUserShouldSeeFailedMessageAs(String expectedWarningMessage) {
+
+//      Cok ilginc bir cözüm !!!
+//      Asagidaki gibi cözmeye calistim ama cucumber NoAlertObject gibi bir hata mesaji verdi
+//      Web sayfasinda cikan ikaz mesaji Alert olamasina ragmen, Alert Class'tan obje olusturmadan
+//      getAttribute("validationMessage") metodu ile Alert ikaz mesajina erisim saglandi.
+//      Not = Hata mesaji WebSayfasindan locate edilemedi.
+//      -----
+        String actualWarningMessage = new PayBills().savedPayeeAmount.getAttribute("validationMessage");
+        System.out.println("actualWarningMessage = " + actualWarningMessage);
+        Assert.assertEquals("Verify warning message", expectedWarningMessage,actualWarningMessage);
+
+        //    @Then("the user should see failed message")
+//    public void the_user_should_see_failed_message() {
+//
+//        BrowserUtils.waitFor(3);
+//        Alert msg = Driver.get().switchTo().alert();
+//        System.out.println("msg = " + msg.getText());
+//    }
+    }
 }
 
 

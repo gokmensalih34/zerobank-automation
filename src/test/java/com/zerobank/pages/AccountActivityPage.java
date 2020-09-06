@@ -8,6 +8,9 @@ import java.util.List;
 
 public class AccountActivityPage extends BasePage{
 
+    @FindBy(id="aa_accountId")
+    public WebElement account;
+
     @FindBy(css = "select#aa_accountId>option")
     public List<WebElement> accountOptions;
 

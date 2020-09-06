@@ -1,5 +1,6 @@
 Feature: Account Activity
 
+
   Scenario: Account Activity page
     Given the user is logged in
     When the user accesses the "Account Activity" tab

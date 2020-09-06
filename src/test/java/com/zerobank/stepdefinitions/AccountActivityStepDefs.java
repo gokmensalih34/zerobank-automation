@@ -27,12 +27,32 @@ public class AccountActivityStepDefs {
     @Then("the Account drop down default option should be {string}")
     public void the_Account_drop_down_default_option_should_be(String expectedDefaultOption) {
 
-        WebElement dropdownElement = Driver.get().findElement(By.cssSelector("select#aa_accountId"));
-        Select accountOptions = new Select(dropdownElement);
-        String actualDefaultOption = accountOptions.getFirstSelectedOption().getText();
-        System.out.println("actualDefaultOption = " + actualDefaultOption);
+        Select option = new Select(new AccountActivityPage().account);
 
-        Assert.assertEquals("Verify default option", expectedDefaultOption,actualDefaultOption);
+//        Select Class yardimiyla olusturulan "option" WebElementlerininin elde edilmesi ve
+//        Stringe dönüstürülüp yazdirilmasi calismasi
+//        -------------
+//        List<WebElement> options = option.getOptions();
+//        List<String> opts = new ArrayList<>();
+//        for (WebElement element : options) {
+//            opts.add(element.getText());
+//        }
+//        System.out.println("opts = " + opts);
+//        ---------
+
+        String actualDefaultOption = option.getFirstSelectedOption().getText();
+        System.out.println("actualDefaultOption = " + actualDefaultOption);
+        Assert.assertEquals("Verify default account option in Account Activity", actualDefaultOption,expectedDefaultOption);
+
+//        Asagidaki sekilde de test geciyor.
+//        Dropdown Eleman ile ilgili iyi bir calisma oldu. Ama POM icin uygun bir cözüm tarzi degil.
+//        -------------------------------
+//        WebElement dropdownElement = Driver.get().findElement(By.cssSelector("select#aa_accountId"));
+//        Select accountOptions = new Select(dropdownElement);
+//        String actualDefaultOption = accountOptions.getFirstSelectedOption().getText();
+//        System.out.println("actualDefaultOption = " + actualDefaultOption);
+//
+//        Assert.assertEquals("Verify default option", expectedDefaultOption,actualDefaultOption);
     }
 
     @Then("Account drop down should have the following options")
@@ -79,16 +99,6 @@ public class AccountActivityStepDefs {
 //        Assert.assertEquals(expectedColumnNames,cN);
 
     }
-
-
-    @Then("the user should see failed message")
-    public void the_user_should_see_failed_message() {
-
-        BrowserUtils.waitFor(3);
-        Alert msg = Driver.get().switchTo().alert();
-        System.out.println("msg = " + msg.getText());
-    }
-
 
 
 }

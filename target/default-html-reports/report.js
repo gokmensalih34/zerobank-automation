@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PurchaseForeignCurrency.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PayBills.feature");
 formatter.feature({
-  "name": "Purchase Foreign Currency",
+  "name": "Pay Bills",
   "description": "",
   "keyword": "Feature"
 });
@@ -23,17 +23,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user accesses the Purchase foreign currency cash tab",
-  "keyword": "Given "
+  "name": "the user accesses the \"Pay Bills\" tab",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_accesses_the_tab(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Error message for not selecting currency",
+  "name": "User should see failed message in case of unsuccessful payment under Pay Bills",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,21 +43,71 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user tries to calculate cost without selecting a currency",
-  "keyword": "When "
+  "name": "the user choose payee \"Wells Fargo\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.user_tries_to_calculate_cost_without_selecting_a_currency()"
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_choose_payee(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "error message \"Please, ensure that you have filled all the required fields with valid values.\" should be displayed",
+  "name": "the user choose  Account \"Loan\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_choose_Account(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enters amount \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enters_amount(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enter date \"2020-09-08\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enter_date(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enter description \"New Transaction\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enter_description(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on Pay button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_clicks_on_Pay_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should see failed message as \"Please fill in this field.\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.errorMessageShouldBeDisplayed(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.theUserShouldSeeFailedMessageAs(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

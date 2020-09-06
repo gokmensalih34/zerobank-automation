@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6192966000,
+              "duration": 4318841000,
               "status": "passed"
             },
             "line": 4,
@@ -23,24 +23,30 @@
           },
           {
             "result": {
-              "duration": 3427769000,
+              "duration": 1174074000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user accesses the Purchase foreign currency cash tab",
+            "name": "the user accesses the \"Pay Bills\" tab",
             "match": {
-              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_accesses_the_tab(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-05T23:43:41.006Z",
+        "start_timestamp": "2020-09-06T12:25:27.977Z",
         "before": [
           {
             "result": {
-              "duration": 1748417000,
+              "duration": 1822641000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +54,14 @@
             }
           }
         ],
-        "line": 24,
-        "name": "Error message for not selecting currency",
+        "line": 20,
+        "name": "User should see failed message in case of unsuccessful payment under Pay Bills",
         "description": "",
-        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
+        "id": "pay-bills;user-should-see-failed-message-in-case-of-unsuccessful-payment-under-pay-bills",
         "after": [
           {
             "result": {
-              "duration": 94806000,
+              "duration": 80280000,
               "status": "passed"
             },
             "match": {
@@ -68,31 +74,121 @@
         "steps": [
           {
             "result": {
-              "duration": 2209437000,
+              "duration": 106770000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "user tries to calculate cost without selecting a currency",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.user_tries_to_calculate_cost_without_selecting_a_currency()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2015944000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "error message \"Please, ensure that you have filled all the required fields with valid values.\" should be displayed",
+            "line": 21,
+            "name": "the user choose payee \"Wells Fargo\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Please, ensure that you have filled all the required fields with valid values.\"",
-                  "offset": 14
+                  "val": "\"Wells Fargo\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.PurchaseForeignCurrenyStepDefs.errorMessageShouldBeDisplayed(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_choose_payee(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75702000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user choose  Account \"Loan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_choose_Account(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44192000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user enters amount \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enters_amount(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104457000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user enter date \"2020-09-08\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-09-08\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enter_date(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63643000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user enter description \"New Transaction\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Transaction\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_enter_description(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55330000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the user clicks on Pay button",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_clicks_on_Pay_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25052000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user should see failed message as \"Please fill in this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill in this field.\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.theUserShouldSeeFailedMessageAs(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -104,11 +200,11 @@
         ]
       }
     ],
-    "name": "Purchase Foreign Currency",
+    "name": "Pay Bills",
     "description": "",
-    "id": "purchase-foreign-currency",
+    "id": "pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "uri": "file:src/test/resources/features/PayBills.feature",
     "tags": []
   }
 ]
