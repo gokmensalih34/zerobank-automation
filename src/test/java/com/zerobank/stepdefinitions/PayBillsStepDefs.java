@@ -99,7 +99,6 @@ public class PayBillsStepDefs {
         //    @Then("the user should see failed message")
 //    public void the_user_should_see_failed_message() {
 //
-//        BrowserUtils.waitFor(3);
 //        Alert msg = Driver.get().switchTo().alert();
 //        System.out.println("msg = " + msg.getText());
 //    }
