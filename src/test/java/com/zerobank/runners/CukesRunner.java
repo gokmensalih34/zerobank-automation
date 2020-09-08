@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue = "com/zerobank/stepdefinitions",
         dryRun=false,
-        tags = "@wip"
+        tags = "@li or @aa or @aan or @ft or @pb"
 )
 public class CukesRunner {
 }

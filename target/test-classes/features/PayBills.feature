@@ -1,3 +1,4 @@
+@pb
 Feature: Pay Bills
 
   Background:
@@ -16,7 +17,6 @@ Feature: Pay Bills
     And the user clicks on Pay button
     Then the user should see "The payment was successfully submitted."
 
-  @wip
     Scenario: User should see failed message in case of unsuccessful payment under Pay Bills
       And the user choose payee "Wells Fargo"
       And the user choose  Account "Loan"
